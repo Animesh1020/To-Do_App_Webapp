@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="to-do_app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter a new task..." maxlength="100">
+            <button id="addBtn">Add Task</button>
+        </div>
+        
+        <div class="stats">
+            <span id="totalTasks">Total: 0</span>
+            <span id="completedTasks">Completed: 0</span>
+            <span id="pendingTasks">Pending: 0</span>
+        </div>
+        
+        <ul id="taskList" class="task-list">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+        
+        <div class="empty-state" id="emptyState">
+            <p>No tasks yet. Add one above to get started!</p>
+        </div>
+    </div>
+    
+    <script src="to-do_app.js"></script>
+</body>
+</html>
